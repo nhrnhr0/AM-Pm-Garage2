@@ -43,7 +43,8 @@
           Did you ever got stuc
           <div class="smHeroHeading">outside or inside your garage?</div>
         </h1>
-        <a class="mainBtn" href="#">let’s prevent it</a>
+        
+        <button class="mainBtn" type="button" onclick="scroll_to_first_form()">let’s prevent it</button>
       </div>
     </section>
 
@@ -73,7 +74,7 @@
             </div>
           </div>
           <div class="col-lg-5 mt-5 mt-lg-0">
-            <div class="contactForm">
+            <div class="contactForm" id="first_form">
               <div class="contactFormHeading">
                 Get 10% off now!! <br />
                 When book through here
@@ -82,22 +83,24 @@
                 For a free consultation call and a free estimate, eave details
                 in he form now!
               </div>
-              <form class="myContactForm" action="">
+              <form action="https://forms.ms-global.co.il/submits/am-pm-garage-doors/" method="POST" class="myContactForm" action="">
                 <input
                   class="formInput"
                   type="text"
-                  name=""
+                  name="name"
+                  required
                   id=""
                   placeholder="name"
                 />
                 <input
                   class="formInput"
                   type="text"
-                  name=""
+                  name="phone"
+                  required
                   id=""
                   placeholder="phone"
                 />
-                <button class="mainBtn">FREE Estimate Now!</button>
+                <button class="mainBtn" id="scroll_1_target">FREE Estimate Now!</button>
               </form>
             </div>
           </div>
@@ -121,7 +124,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <img class="detailImg" src="./img/user-img.png" alt="" />
+            <img class="detailImg" src="./img/side_image.jpeg" alt="" />
           </div>
         </div>
       </div>
@@ -139,6 +142,42 @@
           </h2>
         </div>
         <h2 class="subHeading white">to get:</h2>
+
+        <div class="bullets">
+          <div class="bullet aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="icon" width="65px" height="65px">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+                      C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"></path>
+                      </svg>
+              </div>                    <div class="text">
+                  10% discount when ordering from the website
+              </div>
+          </div>
+          <div class="bullet aos-init aos-animate" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500">
+              <div class="icon" width="65px" height="65px">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+                      C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"></path>
+                      </svg>
+              </div>                    <div class="text">
+                  Minimum 2 year warranty on all the Parts
+              </div>
+          </div>
+          <div class="bullet aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
+              <div class="icon" width="65px" height="65px">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+                      C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"></path>
+                      </svg>
+              </div>
+              <div class="text">
+                  reliability, Quality, quick and custom service
+              </div>
+          </div>
+      </div>
+
+        <!--
         <div class="row mt-4">
           <div class="col-lg-4">
             <input class="whiteInput" type="text" />
@@ -157,7 +196,10 @@
             </div>
           </div>
         </div>
-        <a class="mainBtn" href="#">כפתור</a>
+        -->
+        <button class="button-77" type="button" id="cta_btn" onclick="scroll_to_secound_form()">For Free Estimate and
+          10% off!! <br>
+          &gt;&gt;click here&lt;&lt; </button>
         <div class="row mt-5 pt-4">
           <div class="col-lg-4">
             <div class="getSectionCard">
@@ -167,79 +209,80 @@
               </h2>
               <div class="formPoints">
                 <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
+                <div class="formPoint">Double door</div>
+                <div class="formPoint"> Commercial door</div>
+                <div class="formPoint">Customized door</div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
-                Installing a <br />
-                new door
+                Installing <br />
+                new opener
               </h2>
               <div class="formPoints">
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
+                <div class="formPoint">Residential opener</div>
+                <div class="formPoint">Commercial opener</div>
+                <div class="formPoint">Gear Replacement</div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
-                Installing a <br />
-                new door
+                Installing  <br />
+                new parts
               </h2>
               <div class="formPoints">
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
+                <div class="formPoint">Remote, Key pad</div>
+                <div class="formPoint">Panel, Bottom Seal</div>
+                <div class="formPoint">Springs, and all brackets</div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
-                Installing a <br />
-                new door
+                Greg door repair
               </h2>
               <div class="formPoints">
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
+                <div class="formPoint">Broken spring</div>
+                <div class="formPoint">Broken cable</div>
+                <div class="formPoint">Door off trucks</div>
+                <div class="formPoint">Fix Noises</div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
-                Installing a <br />
-                new door
+                Electronic repair
+
               </h2>
               <div class="formPoints">
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
+                <div class="formPoint">Opener / gear repair
+                </div>
+                <div class="formPoint">Safety sensor Repair / installation
+                </div>
+                <div class="formPoint">Remote, keypad, and wall button
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
-                Installing a <br />
-                new door
+                Installing  <br />
+                new parts
               </h2>
               <div class="formPoints">
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
-                <div class="formPoint">Single door</div>
+                <div class="formPoint">Prevenst any brakedowns
+                </div>
+                <div class="formPoint">Makes your door quieter
+                </div>
+                <div class="formPoint">Keeps you home and family safe
+                </div>
               </div>
             </div>
           </div>
@@ -253,13 +296,69 @@
         <h2 class="subHeading">Our Happy Clients!</h2>
         <div class="row mt-5">
           <div class="col-lg-4">
-            <div class="yellowCard"></div>
+            <div class="yellowCard">
+              <div class="content">
+                <div class="title">“</div>
+                <div class="text">
+                  Excellent service throughout when my front door lock broke. They come out promptly, diagnosed the problem and took care of everything. I'll be recommanding AMPM to anyone else I know!!
+                </div>
+              </div>
+
+                <div class="person">
+                  <img width="340" height="340" src="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7.jpg" class="face" alt="" loading="lazy" srcset="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7.jpg 340w,
+                          https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7-300x300.jpg 300w,
+                          https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7-150x150.jpg 150w" sizes="(max-width: 340px) 100vw, 340px">
+                  <div class="pcontent">
+                      <div class="pname">Stella Alba</div>
+                      <div class="info">Home Owner</div>
+                  </div>
+              </div>
+            
+
+
+            </div>
           </div>
           <div class="col-lg-4">
-            <div class="yellowCard"></div>
+            <div class="yellowCard">
+
+              <div class="content">
+                <div class="title">“</div>
+                <div class="text">
+                  AMPM Locksmiths designed and installed a full suited key system to our commercial premises in a highly professional and efficient manner, as always. Their knowledge and expertise in this field is unrivalled.
+                </div>
+              </div>
+
+                <div class="person">
+                  <img width="340" height="340" src="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5.jpg" class="face" alt="" loading="lazy" srcset="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5.jpg 340w,
+                                https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5-300x300.jpg 300w,
+                                https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5-150x150.jpg 150w" sizes="(max-width: 340px) 100vw, 340px">
+                  <div class="pcontent">
+                      <div class="pname">Stella Alba</div>
+                      <div class="info">Home Owner</div>
+                  </div>
+              </div>
+            </div>
+
+
+
           </div>
           <div class="col-lg-4">
-            <div class="yellowCard"></div>
+            <div class="yellowCard">
+              <div class="content">
+                <div class="title">“</div>
+              <div class="text">
+                Great custiner service. Great advice and quality of products. Good stock of various hardware, handles, locks, cylinders, gearbox.... etc... This place rocks!.... loads better then Screwfix and other big name stores.
+              </div>
+            </div>
+              <div class="person">
+                <img width="340" height="340" src="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4.jpg" class="face" alt="" loading="lazy" srcset="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4.jpg 340w,
+                                    https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4-300x300.jpg 300w,
+                                    https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4-150x150.jpg 150w" sizes="(max-width: 340px) 100vw, 340px">
+                <div class="pcontent">
+                    <div class="pname">Stella Alba</div>
+                    <div class="info">Home Owner</div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -269,6 +368,16 @@
     <section class="aboutSection">
       <div class="container">
         <h2 class="subHeading">About</h2>
+        <div class="content">
+          <div class="text">
+            AMPM doors is one of the best automatic garage door companies in the state of Atlanta.
+            This well-known position has been achieved over years of hard work, innovation, commitment to quality and reliable customer service.
+            We specialize in repairing and installing garage doors, solving any problem and making sure your door will serve you fault less as long as possible The fastest service on the market guaranteed.
+          </div>
+          <div class="vid">
+          <video src="./img/ampmVid.mp4" autoplay="autoplay" loop="loop" muted="muted" preload="auto"></video>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -277,53 +386,66 @@
       <div class="container">
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <img src="./img/carousel-img1.png" alt="" />
+            <img src="./img/swiper/img1.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
+            <img src="./img/swiper/img2.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img1.png" alt="" />
+            <img src="./img/swiper/img3.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
+            <img src="./img/swiper/img4.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img1.png" alt="" />
+            <img src="./img/swiper/img5.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
+            <img src="./img/swiper/img6.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
+            <img src="./img/swiper/img7.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
+            <img src="./img/swiper/img8.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
+            <img src="./img/swiper/img9.jpeg" alt="" />
           </div>
           <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
+            <img src="./img/swiper/img10.jpeg" alt="" />
           </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
+          <!--
           <div class="item">
             <img src="./img/carousel-img2.png" alt="" />
           </div>
           <div class="item">
             <img src="./img/carousel-img2.png" alt="" />
           </div>
+          <div class="item">
+            <img src="./img/carousel-img2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/carousel-img2.png" alt="" />
+          </div>
+          -->
         </div>
         <h2 class="subHeading">
           So what are you waiting for? et us give you a peaceful future, today!!
         </h2>
         <div class="mainText">
-          Leave details in the form for a 10% discount!
+          Leave details in the form for a
+
+
+          <div class="red-pen" id="redpen">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"></path>
+            </svg>
+                10% discount!
+        </div>
+
+
+
         </div>
         <div class="mainText">
           and one of our experts will contact you shortly!
@@ -362,7 +484,7 @@
     <!-- Map Section -->
     <section class="mapSection">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26361250.667320687!2d-113.75533773453306!3d36.24128894212528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1632489654984!5m2!1sen!2s"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCLmOyl1lZ1oOovi60v6HPnp6bY-7A80is&q=atlanta&zoom=12"
         width="100%"
         height="800"
         style="border: 0"
@@ -383,22 +505,112 @@
             </h2>
           </div>
         </div>
+        <form action="https://forms.ms-global.co.il/submits/am-pm-garage-doors/" method="POST" style="width: 100%;" id="secound_form">
         <div class="row mt-5">
-          <div class="col-lg-4">
-            <input class="whiteInput" type="text" placeholder="name" />
-          </div>
-          <div class="col-lg-4 my-4 my-lg-0">
-            <input class="whiteInput" type="text" placeholder="phone" />
-          </div>
-          <div class="col-lg-4">
-            <button class="mainBtn">for a free estimate</button>
-          </div>
+            <div class="col-lg-4">
+              <input class="whiteInput" type="text" name="name" required placeholder="name" />
+            </div>
+            <div class="col-lg-4 my-4 my-lg-0">
+              <input class="whiteInput" type="text" name="phone" required placeholder="phone" />
+            </div>
+            <div class="col-lg-4">
+              <button class="mainBtn">for a free estimate</button>
+            </div>
         </div>
+      </form>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+      function scroll_to_first_form() {
+        console.log('scroll_to_first_form');
+        window.smoothScroll(document.getElementById('scroll_1_target'));
+      }
+
+      function scroll_to_secound_form() {
+        window.smoothScroll(document.getElementById('secound_form'));
+      }
+
+
+    window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+
+
+
+    var redpen = document.getElementById("redpen");
+    const RED_PEN_DELAY = 1500;
+    /*function inView(el) {
+  // get window height
+  var windowHeight = window.innerHeight;
+  // get number of pixels that the document is scrolled
+  var scrollY = window.scrollY || window.pageYOffset;
+  
+  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+  var scrollPosition = scrollY + windowHeight;
+  // get element position (distance from the top of the page to the bottom of the element)
+  var elementPosition = el.getBoundingClientRect().top + scrollY + counterHeight;
+  
+  // is scroll position greater than element position? (is element in view?)
+  if (scrollPosition > elementPosition) {
+    return true;
+  }
+  
+  return false;
+}*/
+
+function scroll_listener() {
+  animateRedPenListenr();
+
+}
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+  );
+}
+var is_redpen_active = false;
+function animateRedPenListenr() {
+  var is_in_view = isInViewport(redpen);
+  if(is_redpen_active == false && is_in_view) {
+    is_redpen_active =true;
+    setTimeout(()=>{
+      redpen.classList.add('active');
+    },RED_PEN_DELAY);
+  }else if(is_in_view == false){
+    is_redpen_active =false;
+    redpen.classList.remove('active');
+  }
+}
+document.addEventListener('scroll', scroll_listener);
+
+    </script>
   </body>
 </html>
