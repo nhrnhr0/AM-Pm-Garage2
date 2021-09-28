@@ -28,16 +28,20 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/owl.carousel.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <!-- Hero Section -->
-    <section class="heroSection">
+    <section id="hero_section" class="heroSection">
       <div class="contaier">
         <a class="brandLogo" href="#">
-          <img src="./img/logo.png" alt="" />
+          <img src="./img/logo_outline.png" alt="" />
         </a>
         <h1 class="heroHeading">
           Did you ever got stuc
@@ -112,7 +116,7 @@
     <section class="detailsSection">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 pr-3 pr-lg-5 mt-5">
+          <div class="col-lg-8 pr-3 pr-lg-5 mt-5" data-aos="fade-right">
             <h2 class="subHeading">
               Don’t let your door surprise you, save time and money by a quick
               visit of a technician
@@ -123,7 +127,7 @@
               technician once a year.
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-left">
             <img class="detailImg" src="./img/side_image.jpeg" alt="" />
           </div>
         </div>
@@ -132,10 +136,9 @@
 
     <!-- Get Section -->
     <section class="getSection">
-      <img class="getSectionImage" src="./img/Group 2.png" alt="" />
-      <img class="getBgImage" src="./img/get-bg.jpg" alt="" />
+      <img class="getSectionImage" src="./img/get-section-bg_blue.png" alt="" />
       <div class="container">
-        <div class="getSectionHeader">
+        <div class="getSectionHeader" data-aos="fade-down">
           <h2 class="subHeading red">Warning</h2>
           <h2 class="subHeading">
             You may do more damage if you <br />
@@ -198,11 +201,11 @@
           </div>
         </div>
         -->
-        <button class="button-77" type="button" id="cta_btn" onclick="scroll_to_secound_form()">For Free Estimate and
+        <button class="button-77" data-aos="zoom-in" type="button" id="cta_btn" onclick="scroll_to_secound_form()">For Free Estimate and
           10% off!! <br>
           &gt;&gt;click here&lt;&lt; </button>
         <div class="row mt-5 pt-4">
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing a <br />
@@ -216,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing <br />
@@ -229,7 +232,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing  <br />
@@ -242,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Greg door repair
@@ -255,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Electronic repair
@@ -271,7 +274,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing  <br />
@@ -296,10 +299,9 @@
       <div class="container">
         <h2 class="subHeading">Our Happy Clients!</h2>
         <div class="row mt-5">
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
             <div class="yellowCard">
               <div class="content">
-                <div class="title">“</div>
                 <div class="text">
                   Excellent service throughout when my front door lock broke. They come out promptly, diagnosed the problem and took care of everything. I'll be recommanding AMPM to anyone else I know!!
                 </div>
@@ -319,11 +321,10 @@
 
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
             <div class="yellowCard">
 
               <div class="content">
-                <div class="title">“</div>
                 <div class="text">
                   AMPM Locksmiths designed and installed a full suited key system to our commercial premises in a highly professional and efficient manner, as always. Their knowledge and expertise in this field is unrivalled.
                 </div>
@@ -339,14 +340,10 @@
                   </div>
               </div>
             </div>
-
-
-
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="300">
             <div class="yellowCard">
               <div class="content">
-                <div class="title">“</div>
               <div class="text">
                 Great custiner service. Great advice and quality of products. Good stock of various hardware, handles, locks, cylinders, gearbox.... etc... This place rocks!.... loads better then Screwfix and other big name stores.
               </div>
@@ -366,8 +363,8 @@
     </section>
 
     <!-- About Section -->
-    <section class="aboutSection">
-      <div class="container">
+    <section class="aboutSection" data-aos="flip-up" data-aos-duration="1500">
+      <div class="container" >
         <h2 class="subHeading">About</h2>
         <div class="content">
           <div class="text">
@@ -376,7 +373,7 @@
             We specialize in repairing and installing garage doors, solving any problem and making sure your door will serve you fault less as long as possible The fastest service on the market guaranteed.
           </div>
           <div class="vid">
-          <video src="./img/ampmVid.mp4" autoplay="autoplay" loop="loop" muted="muted" preload="auto"></video>
+            <img src="./img/ampmVid.gif"></img>
           </div>
         </div>
       </div>
@@ -385,6 +382,54 @@
     <!-- Carousel Section -->
     <section class="carouselSection">
       <div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="./img/swiper/img1.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img2.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img3.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img4.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img5.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img6.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img7.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img8.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img9.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img10.jpeg" alt="" />
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+        <!--
+
         <div class="owl-carousel owl-theme">
           <div class="item">
             <img src="./img/swiper/img1.jpeg" alt="" />
@@ -416,21 +461,10 @@
           <div class="item">
             <img src="./img/swiper/img10.jpeg" alt="" />
           </div>
-          <!--
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          -->
         </div>
+
+      -->
+
         <h2 class="subHeading">
           So what are you waiting for? et us give you a peaceful future, today!!
         </h2>
@@ -457,24 +491,24 @@
     <!-- Theme Selves Section -->
     <section class="themeSelvesSection">
       <img class="themeImg" src="./img/theme-selves-img.png" alt="" />
-      <div class="container">
+      <div id="counters" class="container">
         <h2 class="subHeading">Number Speak for Themselves:</h2>
         <div class="row mt-5">
           <div class="col-lg-4">
             <div class="totalsCard">
-              <div class="totals">2,461</div>
+              <div data-num="2461" class="totals num">2,461</div>
               <div class="totalsHeading">Satisfied Clients</div>
             </div>
           </div>
           <div class="col-lg-4 my-5 my-lg-0">
             <div class="totalsCard">
-              <div class="totals">5</div>
+              <div data-num="5" class="totals num">5</div>
               <div class="totalsHeading">Years of Experience</div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="totalsCard">
-              <div class="totals">1,987</div>
+              <div data-num="1987" class="totals num">1,987</div>
               <div class="totalsHeading">Locks Fixed</div>
             </div>
           </div>
@@ -515,7 +549,7 @@
               <input class="whiteInput" type="text" name="phone" required placeholder="phone" />
             </div>
             <div class="col-lg-4">
-              <button class="mainBtn">for a free estimate</button>
+              <button class="mainBtn">for a <b>FREE</b> estimate</button>
             </div>
         </div>
       </form>
@@ -523,94 +557,37 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/owl.carousel.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/spacial_animations.js" defer></script>
     <script src="./js/main.js"></script>
 
     <script>
-      function scroll_to_first_form() {
-        console.log('scroll_to_first_form');
-        window.smoothScroll(document.getElementById('scroll_1_target'));
-      }
+      AOS.init();
 
-      function scroll_to_secound_form() {
-        window.smoothScroll(document.getElementById('secound_form'));
-      }
-
-
-    window.smoothScroll = function(target) {
-      var scrollContainer = target;
-      do { //find scroll container
-          scrollContainer = scrollContainer.parentNode;
-          if (!scrollContainer) return;
-          scrollContainer.scrollTop += 1;
-      } while (scrollContainer.scrollTop == 0);
-
-      var targetY = 0;
-      do { //find the top of target relatively to the container
-          if (target == scrollContainer) break;
-          targetY += target.offsetTop;
-      } while (target = target.offsetParent);
-
-      scroll = function(c, a, b, i) {
-          i++; if (i > 30) return;
-          c.scrollTop = a + (b - a) / 30 * i;
-          setTimeout(function(){ scroll(c, a, b, i); }, 20);
-      }
-      // start scrolling
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    }
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: "3",
+  spaceBetween: 30,
 
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-    var redpen = document.getElementById("redpen");
-    const RED_PEN_DELAY = 1500;
-    /*function inView(el) {
-  // get window height
-  var windowHeight = window.innerHeight;
-  // get number of pixels that the document is scrolled
-  var scrollY = window.scrollY || window.pageYOffset;
-  
-  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
-  var scrollPosition = scrollY + windowHeight;
-  // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = el.getBoundingClientRect().top + scrollY + counterHeight;
-  
-  // is scroll position greater than element position? (is element in view?)
-  if (scrollPosition > elementPosition) {
-    return true;
-  }
-  
-  return false;
-}*/
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-function scroll_listener() {
-  animateRedPenListenr();
-
-}
-function isInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-
-  );
-}
-var is_redpen_active = false;
-function animateRedPenListenr() {
-  var is_in_view = isInViewport(redpen);
-  if(is_redpen_active == false && is_in_view) {
-    is_redpen_active =true;
-    setTimeout(()=>{
-      redpen.classList.add('active');
-    },RED_PEN_DELAY);
-  }else if(is_in_view == false){
-    is_redpen_active =false;
-    redpen.classList.remove('active');
-  }
-}
-document.addEventListener('scroll', scroll_listener);
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
     </script>
   </body>

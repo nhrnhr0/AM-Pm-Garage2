@@ -4,6 +4,11 @@ body {
   /* margin: 0; */
 }
 
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
 /* carousel section */
 .carouselSection .mainText .red-pen {
   display: inline-block;
@@ -51,7 +56,7 @@ body {
   padding: 1em 0;
   background-image: url("../img/assets/header.jpg");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   min-height: 100vh;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.6);
@@ -305,7 +310,7 @@ body {
 
 .getSection .getSectionHeader {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 7em;
 }
 
 .getSection .getSectionHeader .subHeading {
@@ -400,45 +405,37 @@ body {
   position: relative;
 }
 
-.clientsSection .yellowCard .content {
-  margin: 30px;
-  padding: 10px;
+.clientsSection .yellowCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.clientsSection .yellowCard .content .title {
-  font-size: 4.5rem;
-  padding-left: 4%;
+.clientsSection .yellowCard .content {
+  padding-top: 25px;
 }
 
 .clientsSection .yellowCard .content .text {
   padding-left: 4%;
-  position: absolute;
+  padding-right: 4%;
   font-size: x-large;
   font-weight: bold;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding-right: 4%;
 }
 
 .clientsSection .yellowCard .person {
-  margin-top: 35px;
-  padding: 3%;
-  position: absolute;
-  bottom: 2%;
+  position: relative;
   width: 100%;
-  -webkit-transform: translateX(10%);
-          transform: translateX(10%);
+  padding: 10%;
+  font-size: x-large;
 }
 
 .clientsSection .yellowCard .person .face {
@@ -493,25 +490,31 @@ body {
   color: #545353;
 }
 
+.aboutSection .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutSection .container .content .text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.aboutSection .container .content .vid {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aboutSection .container .content .vid img {
+  width: 100%;
+}
+
 /* Carousel Section */
 .carouselSection {
   padding: 3em 0;
-}
-
-.carouselSection .owl-dots {
-  display: block !important;
-  margin-top: 2em !important;
-}
-
-.carouselSection .owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background-color: black;
-}
-
-.carouselSection .owl-theme .owl-dots .owl-dot span {
-  width: 14px;
-  height: 14px;
-  margin: 5px 4px;
 }
 
 .carouselSection .subHeading {
@@ -528,6 +531,7 @@ body {
   padding: 12em 0;
   position: relative;
   margin-top: -8em;
+  z-index: 2;
 }
 
 .themeSelvesSection .themeImg {
@@ -539,6 +543,7 @@ body {
 }
 
 .themeSelvesSection .subHeading {
+  z-index: 2;
   font-size: 2.2em;
   color: white;
 }
@@ -653,7 +658,7 @@ body {
     font-size: 2em;
   }
   .getSection .getSectionHeader {
-    margin-top: 5em;
+    margin-top: 7em;
   }
   .getSection .getBgImage {
     height: 88%;
