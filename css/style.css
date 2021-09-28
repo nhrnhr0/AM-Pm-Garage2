@@ -393,45 +393,37 @@ body {
   position: relative;
 }
 
-.clientsSection .yellowCard .content {
-  margin: 30px;
-  padding: 10px;
+.clientsSection .yellowCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.clientsSection .yellowCard .content .title {
-  font-size: 4.5rem;
-  padding-left: 4%;
+.clientsSection .yellowCard .content {
+  padding-top: 25px;
 }
 
 .clientsSection .yellowCard .content .text {
   padding-left: 4%;
-  position: absolute;
+  padding-right: 4%;
   font-size: x-large;
   font-weight: bold;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding-right: 4%;
 }
 
 .clientsSection .yellowCard .person {
-  margin-top: 35px;
-  padding: 3%;
-  position: absolute;
-  bottom: 2%;
+  position: relative;
   width: 100%;
-  -webkit-transform: translateX(10%);
-          transform: translateX(10%);
+  padding: 10%;
+  font-size: x-large;
 }
 
 .clientsSection .yellowCard .person .face {
