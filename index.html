@@ -28,13 +28,17 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/owl.carousel.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <!-- Hero Section -->
-    <section class="heroSection">
+    <section id="hero_section" class="heroSection">
       <div class="contaier">
         <a class="brandLogo" href="#">
           <img src="./img/logo_outline.png" alt="" />
@@ -112,7 +116,7 @@
     <section class="detailsSection">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 pr-3 pr-lg-5 mt-5">
+          <div class="col-lg-8 pr-3 pr-lg-5 mt-5" data-aos="fade-right">
             <h2 class="subHeading">
               Don’t let your door surprise you, save time and money by a quick
               visit of a technician
@@ -123,7 +127,7 @@
               technician once a year.
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-left">
             <img class="detailImg" src="./img/side_image.jpeg" alt="" />
           </div>
         </div>
@@ -134,7 +138,7 @@
     <section class="getSection">
       <img class="getSectionImage" src="./img/get-section-bg_blue.png" alt="" />
       <div class="container">
-        <div class="getSectionHeader">
+        <div class="getSectionHeader" data-aos="fade-down">
           <h2 class="subHeading red">Warning</h2>
           <h2 class="subHeading">
             You may do more damage if you <br />
@@ -197,11 +201,11 @@
           </div>
         </div>
         -->
-        <button class="button-77" type="button" id="cta_btn" onclick="scroll_to_secound_form()">For Free Estimate and
+        <button class="button-77" data-aos="zoom-in" type="button" id="cta_btn" onclick="scroll_to_secound_form()">For Free Estimate and
           10% off!! <br>
           &gt;&gt;click here&lt;&lt; </button>
         <div class="row mt-5 pt-4">
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing a <br />
@@ -215,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing <br />
@@ -228,7 +232,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing  <br />
@@ -241,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Greg door repair
@@ -254,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Electronic repair
@@ -270,7 +274,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
             <div class="getSectionCard">
               <h2 class="getCardHeading">
                 Installing  <br />
@@ -295,7 +299,7 @@
       <div class="container">
         <h2 class="subHeading">Our Happy Clients!</h2>
         <div class="row mt-5">
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
             <div class="yellowCard">
               <div class="content">
                 <div class="text">
@@ -317,7 +321,7 @@
 
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
             <div class="yellowCard">
 
               <div class="content">
@@ -336,11 +340,8 @@
                   </div>
               </div>
             </div>
-
-
-
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="300">
             <div class="yellowCard">
               <div class="content">
               <div class="text">
@@ -362,8 +363,8 @@
     </section>
 
     <!-- About Section -->
-    <section class="aboutSection">
-      <div class="container">
+    <section class="aboutSection" data-aos="flip-up" data-aos-duration="1500">
+      <div class="container" >
         <h2 class="subHeading">About</h2>
         <div class="content">
           <div class="text">
@@ -372,7 +373,7 @@
             We specialize in repairing and installing garage doors, solving any problem and making sure your door will serve you fault less as long as possible The fastest service on the market guaranteed.
           </div>
           <div class="vid">
-          <video src="./img/ampmVid.mp4" autoplay="autoplay" loop="loop" muted="muted" preload="auto"></video>
+            <img src="./img/ampmVid.gif"></img>
           </div>
         </div>
       </div>
@@ -381,6 +382,54 @@
     <!-- Carousel Section -->
     <section class="carouselSection">
       <div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="./img/swiper/img1.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img2.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img3.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img4.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img5.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img6.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img7.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img8.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img9.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img10.jpeg" alt="" />
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+        <!--
+
         <div class="owl-carousel owl-theme">
           <div class="item">
             <img src="./img/swiper/img1.jpeg" alt="" />
@@ -412,21 +461,10 @@
           <div class="item">
             <img src="./img/swiper/img10.jpeg" alt="" />
           </div>
-          <!--
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="./img/carousel-img2.png" alt="" />
-          </div>
-          -->
         </div>
+
+      -->
+
         <h2 class="subHeading">
           So what are you waiting for? et us give you a peaceful future, today!!
         </h2>
@@ -519,12 +557,37 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/owl.carousel.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/spacial_animations.js" defer></script>
     <script src="./js/main.js"></script>
 
     <script>
+      AOS.init();
 
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: "3",
+  spaceBetween: 30,
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
     </script>
   </body>

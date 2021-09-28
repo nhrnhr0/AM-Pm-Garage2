@@ -3,7 +3,13 @@ body {
     font-family: "Nanum Gothic", sans-serif;
     /* margin: 0; */
   }
-
+  .swiper {
+    width: 100%;
+    height: auto;
+    .swiper-slide {
+      
+    }
+  }
 
 /* carousel section */
 .carouselSection {
@@ -412,25 +418,24 @@ body {
     font-size: 2.4em;
     color: #545353;
   }
+  .aboutSection .container .content{
+    display: flex;
+    .text{
+      flex: 2;
+    }
+    .vid {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+  }
   
   /* Carousel Section */
   .carouselSection {
     padding: 3em 0;
   }
-  .carouselSection .owl-dots {
-    display: block !important;
-    margin-top: 2em !important;
-  }
   
-  .carouselSection .owl-theme .owl-dots .owl-dot.active span,
-  .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: black;
-  }
-  .carouselSection .owl-theme .owl-dots .owl-dot span {
-    width: 14px;
-    height: 14px;
-    margin: 5px 4px;
-  }
   .carouselSection .subHeading {
     font-size: 2.3em;
     margin: 0.7em 0 0.2em 0;
@@ -444,6 +449,7 @@ body {
     padding: 12em 0;
     position: relative;
     margin-top: -8em;
+    z-index: 2;
   }
   .themeSelvesSection .themeImg {
     position: absolute;
@@ -453,6 +459,7 @@ body {
     top: 0;
   }
   .themeSelvesSection .subHeading {
+    z-index: 2;
     font-size: 2.2em;
     color: white;
   }
@@ -527,6 +534,8 @@ body {
                 flex-direction: column;
                 .vid {
                     padding-top: 25px;
+                    
+                    
                 }
             }
         }
@@ -567,7 +576,7 @@ body {
       font-size: 2em;
     }
     .getSection .getSectionHeader {
-      margin-top: 5em;
+      margin-top: 7em;
     }
   }
   
