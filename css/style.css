@@ -9,6 +9,11 @@ body {
   height: auto;
 }
 
+section {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 /* carousel section */
 .carouselSection .mainText .red-pen {
   display: inline-block;
@@ -100,6 +105,7 @@ body {
   padding: 12em 0 1em 0;
   position: relative;
   margin-top: -290px;
+  overflow: visible;
 }
 
 .subHeading {
@@ -203,9 +209,9 @@ body {
 
 /* Get Section */
 .getSection {
-  padding: 5em 0;
+  padding: 50px 0;
   position: relative;
-  margin-top: -5em;
+  background-color: #d3d0d0b2;
 }
 
 .getSection .bullets {
@@ -296,7 +302,19 @@ body {
           transform: translateY(-50%);
 }
 
-.getSection #cta_btn {
+.getSection .cta-button-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.getSection .cta-button-wraper #cta_btn {
   background-color: #E9BF39;
   padding: 15px;
   font-weight: bold;
@@ -310,21 +328,17 @@ body {
 
 .getSection .getSectionHeader {
   text-align: center;
-  margin-top: 7em;
+  background-color: #f5bf38;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
 }
 
 .getSection .getSectionHeader .subHeading {
   font-size: 2.1em;
   font-weight: 500;
 }
-.getSection .getBgImage {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  left: 0;
-  top: 325px;
-  border-bottom: 35px solid #e8be39;
-}
+
 .whiteInput {
   background-color: white;
   border: none;
@@ -389,7 +403,7 @@ body {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 22%;
+  height: 102%;
 }
 
 /* Clients Section */
@@ -534,6 +548,12 @@ body {
   z-index: 2;
 }
 
+@media screen and (max-width: 520px) {
+  .themeSelvesSection {
+    margin-top: -4em;
+  }
+}
+
 .themeSelvesSection .themeImg {
   position: absolute;
   z-index: -1;
@@ -576,6 +596,10 @@ body {
   padding: 10em 0 2em 0;
   position: relative;
   margin-top: -13em;
+}
+
+.pageFooter .container {
+  padding-top: 7em;
 }
 
 .pageFooter .footerImg {
@@ -656,16 +680,6 @@ body {
   }
   .pageFooter .subHeading {
     font-size: 2em;
-  }
-  .getSection .getSectionHeader {
-    margin-top: 7em;
-  }
-  .getSection .getBgImage {
-    height: 88%;
-    top: 320px;
-  }
-  .getSection .getSectionImage {
-    height: 12%;
   }
 }
 /*# sourceMappingURL=style.css.map */
